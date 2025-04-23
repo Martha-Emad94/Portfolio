@@ -1,0 +1,22 @@
+.home {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    .intro-text {
+      color: #f1c40f;
+      letter-spacing: 2px;
+    }
+    .highlight {
+      color: #f1c40f;
+    }
+    .btn {
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: bold;
+    }
+    .hero-img {
+      max-width: 400px;
+      border-radius: 20px;
+    }
+  }
+  

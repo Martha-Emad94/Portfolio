@@ -1,0 +1,19 @@
+@import './variables.scss';
+body {
+    font-family: $font-family;
+    color: $text-color;
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+  }
+  html {
+    scroll-behavior: smooth;
+  }

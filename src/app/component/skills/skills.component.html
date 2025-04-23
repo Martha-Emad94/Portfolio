@@ -1,0 +1,25 @@
+<section class="skills-section">
+    <h2 class="section-title">
+      <span class="highlight"> My Skills</span>
+    </h2>
+    <p class="skills-desc">
+      Frontend developer with expertise in modern web technologies, focused on clean code and responsive design.
+    </p>
+  
+    <div class="skills-container">
+      <!-- Technical Skills -->
+       <div class="row">
+        <div class="col-md-6" *ngFor="let skill of skills">
+            <div class="skill-item"  >
+                <div class="skill-header">
+                    <span>{{skill.name}}</span>
+                    <span>{{skill.percentage}}%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" [style.width.%]="skill.percentage"></div>
+                </div>
+              </div>
+        </div>
+       </div>
+    </div>
+  </section>

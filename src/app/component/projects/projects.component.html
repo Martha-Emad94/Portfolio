@@ -1,0 +1,24 @@
+<section id="projects" class="projects-section py-5 bg-black text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fw-bold">Our Projects</h2>
+        <p class="section-subtitle">Here are some of the things I've built recently</p>
+      </div>
+  
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-6" *ngFor="let project of projects">
+          <div class="project-card">
+            <img [src]="project.image" [alt]="project.title" class="img-fluid project-img">
+            <div class="overlay">
+              <div class="overlay-text">
+                <h5>{{ project.title }}</h5>
+                <p>{{ project.category }}</p>
+                <a [href]="project.link" target="_blank" class="btn btn-sm btn-light mt-2">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
